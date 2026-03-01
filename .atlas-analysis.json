@@ -1,0 +1,156 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "CUTLASS",
+  "projectDescription": "High-performance CUDA C++ template library and Python DSLs for linear algebra operations on NVIDIA GPUs",
+  "theme": "aspen",
+  "primaryColor": "#76b900",
+  "lightColor": "#a0d911",
+  "darkColor": "#5a8f00",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation",
+              "compatibility"
+            ]
+          },
+          {
+            "group": "CUTLASS C++",
+            "pages": [
+              "cpp/overview",
+              "cpp/gemm-operations",
+              "cpp/convolution",
+              "cpp/cutlass-3x-design",
+              "cpp/code-organization",
+              "cpp/terminology"
+            ]
+          },
+          {
+            "group": "CuTe Core Library",
+            "pages": [
+              "cute/quickstart",
+              "cute/layout",
+              "cute/layout-algebra",
+              "cute/tensor",
+              "cute/algorithms",
+              "cute/mma-atom"
+            ]
+          },
+          {
+            "group": "CuTe Python DSL",
+            "pages": [
+              "python-dsl/quickstart",
+              "python-dsl/installation",
+              "python-dsl/programming-model",
+              "python-dsl/examples"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "advanced/performance-tuning",
+              "advanced/profiler",
+              "advanced/custom-kernels",
+              "advanced/epilogue-fusion"
+            ]
+          },
+          {
+            "group": "Architecture Support",
+            "pages": [
+              "architectures/overview",
+              "architectures/ampere",
+              "architectures/hopper",
+              "architectures/blackwell"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "C++ API",
+            "pages": [
+              "api/cpp/gemm-api",
+              "api/cpp/fundamental-types",
+              "api/cpp/layouts",
+              "api/cpp/tile-iterators",
+              "api/cpp/utilities"
+            ]
+          },
+          {
+            "group": "Python API",
+            "pages": [
+              "api/python/operations",
+              "api/python/tensor-operations",
+              "api/python/cute-dsl"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "C++ Examples",
+            "pages": [
+              "examples/cpp/basic-gemm",
+              "examples/cpp/tensorop-gemm",
+              "examples/cpp/convolution"
+            ]
+          },
+          {
+            "group": "Python Examples",
+            "pages": [
+              "examples/python/gemm-operations",
+              "examples/python/cute-dsl-kernels",
+              "examples/python/framework-integration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/publications",
+              "resources/changelog",
+              "resources/contributing",
+              "resources/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "High-performance GEMM and convolution operations using CUDA Tensor Cores",
+    "CuTe C++ library for hierarchical tensor layouts and operations",
+    "CuTe Python DSL for GPU kernel development without C++",
+    "Support for multiple data types (FP64, FP32, FP16, BF16, INT8, INT4, FP8)",
+    "Optimized for NVIDIA GPU architectures (Volta, Turing, Ampere, Ada, Hopper, Blackwell)",
+    "Header-only C++ template library with minimal dependencies",
+    "Python interface for rapid prototyping and PyTorch integration",
+    "CUTLASS Profiler for performance analysis and kernel tuning"
+  ],
+  "publicApiSurface": [
+    "cutlass::gemm::device::Gemm",
+    "cutlass::conv::device::ImplicitGemmConvolution",
+    "cutlass::epilogue",
+    "cute::Layout",
+    "cute::Tensor",
+    "cute::MMA_Atom",
+    "cute::Copy_Atom",
+    "cutlass.op.Gemm (Python)",
+    "cutlass.op.Conv2d (Python)",
+    "CuTe DSL kernel decorators (Python)"
+  ]
+}
